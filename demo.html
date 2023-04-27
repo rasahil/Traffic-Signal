@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script language="Javascript" src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo on traffic</title>
+
+    <style>
+        .main{
+            width: 500px;
+            padding: 10px;
+            border: 2px solid ;
+        }
+        #Stop{
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+        #Slow_down{
+            background-color: yellow;
+            /* color: white; */
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+        #Go{
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        #Go:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        #Stop:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        #Slow_down:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <center>
+        <div  class="main">
+            <img src="blanck.jpg" id="myimg" alt=""><br><br>
+            <button id="Stop" value="You Must Stop" onclick="red()">Stop</button>
+            <button id="Slow_down" value="Slow_down Your Bike" onclick="orange()">Slow_down</button>
+            <button id="Go" value="You can GO_Now" onclick="green()">Go</button>     <br> 
+            <h3>Intimision</h3>
+            
+            <p id="msg"></p>
+        </div>
+    </center>
+    
+</body>
+</html>

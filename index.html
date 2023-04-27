@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic signal</title>
+    <style>
+        center{
+            width: 700px;
+            margin-left: 300px;
+            border: 2px solid;
+        }
+        #Stop{
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+        #Slow_Down{
+            background-color: yellow;
+            /* color: white; */
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+
+        }
+        #Go{
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        #Go:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        #Stop:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        #Slow_Down:hover{
+            
+            padding: 10px 15px;
+            font-size: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <center >
+
+
+        <DIV >
+            <h3>TRAFFIC SIGNAL</h3>
+
+            <img id="myimg" src="blanck.jpg" alt=""><br><br>
+            <button id="Stop" onclick="document.getElementById('myimg').src='red.jpg'" value="Stop">Stop</button>
+            <button id="Slow_Down" onclick="document.getElementById('myimg').src='orange.jpg'" value="Slow Down">Slow Down</button>
+            <button id="Go" onclick="document.getElementById('myimg').src='green.jpg'" value="Go">Go</button><br><br>
+            <p id="msg"></p>
+
+        </DIV>
+
+        
+
+    </center>
+    
+</body>
+</html>
